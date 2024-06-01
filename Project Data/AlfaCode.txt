@@ -1,0 +1,220 @@
+ <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:layout_marginBottom="@dimen/_12sdp"
+                            android:orientation="horizontal">
+                        <!--ALFA ACCOUNT LAYOUT-->
+                        <com.base.bankalfalah.utils.anytextview.AnyRelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:visibility="visible">
+
+                            <!--SignInButton -->
+                            <com.base.bankalfalah.utils.anytextview.AnyRelativeLayout
+                                android:id="@+id/singInLayout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_36sdp"
+                                android:background="@drawable/signinbar"
+                                android:visibility="visible"
+                                app:imageIslamicBgRelative="@drawable/signinbar_isl"
+                                app:imagePremiumBgRelative="@drawable/signinbar_prem"
+                                app:isIslamicAssetRelative="true"
+                                app:isPremiumAssetRelative="true">
+
+                                <com.base.bankalfalah.utils.anytextview.AnyImageView
+                                    android:id="@+id/imgProfile"
+                                    android:layout_width="@dimen/_26sdp"
+                                    android:layout_height="@dimen/_26sdp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/_6sdp"
+                                    android:background="@drawable/circle_white"
+                                    android:padding="@dimen/_6sdp"
+                                    android:src="@drawable/ic_launcher"
+                                    app:blockimageChange="true"
+
+                                    app:imageIslamicSrcIv="@drawable/islamiclogo_new"
+                                    app:imagePremiumSrcIv="@drawable/premierlogo"
+                                    app:isIslamicAssetIv="true"
+
+                                    app:isPremiumAssetIv="true" />
+
+                                <!--
+                                app:imagePremiumSrcIv="@drawable/logo_home_prem"
+                                app:imageIslamicSrcIv="@drawable/logo_isl_home"
+                                android:src="@drawable/ic_alfa_share"
+-->
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/_6sdp"
+                                    android:layout_toStartOf="@+id/ivLogin"
+                                    android:layout_toEndOf="@+id/imgProfile"
+                                    android:orientation="vertical">
+
+                                    <com.base.bankalfalah.utils.anytextview.AnyTextView
+                                        android:id="@+id/textViewSignIn"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/login"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_12ssp"
+                                        app:isUrduAllowed="true"
+                                        app:typeface="@string/font_bold" />
+
+                                    <com.base.bankalfalah.utils.anytextview.AnyTextView
+                                        android:id="@+id/textViewDescription"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="Log into your Alfa Account"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_9ssp"
+                                        android:textStyle="normal"
+                                        app:isUrduAllowed="true" />
+
+                                </LinearLayout>
+
+                                <com.base.bankalfalah.utils.anytextview.AnyImageView
+                                    android:id="@+id/ivLogin"
+                                    android:layout_width="@dimen/_18sdp"
+                                    android:layout_height="@dimen/_18sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="@dimen/_8sdp"
+                                    android:src="@drawable/iconsignin"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_11sdp"
+                                    android:visibility="gone"
+                                    app:blockimageChange="true" />
+
+
+                            </com.base.bankalfalah.utils.anytextview.AnyRelativeLayout>
+
+
+                            <!--Account Show Parent Layout -->
+                            <com.base.bankalfalah.utils.anytextview.AnyRelativeLayout
+                                android:id="@+id/accountParentLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:visibility="gone">
+
+                                <!--Account Tab Button -->
+                                <com.base.bankalfalah.utils.anytextview.AnyLinearLayout
+                                    android:id="@+id/tabAccouts"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/signinbar"
+                                    android:gravity="center"
+                                    android:visibility="gone"
+                                    android:weightSum="2"
+                                    app:imageIslamicBgIv="@drawable/signinbar_isl"
+                                    app:imagePremiumBgIv="@drawable/signinbar_prem"
+                                    app:isIslamicAssetIv="true"
+                                    app:isPremiumAssetIv="true">
+
+                                    <com.base.bankalfalah.utils.anytextview.AnyImageView
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="@dimen/_12sdp"
+                                        android:scaleType="centerInside"
+                                        android:src="@drawable/showicon"
+                                        app:blockimageChange="true" />
+
+
+                                    <com.base.bankalfalah.utils.anytextview.AnyTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_10sdp"
+                                        android:text="@string/show_quick_balance"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_11ssp"
+                                        android:textStyle="bold"
+                                        app:isUrduAllowed="true" />
+                                </com.base.bankalfalah.utils.anytextview.AnyLinearLayout>
+
+
+                                <!--Show Account Layout -->
+                                <com.base.bankalfalah.utils.anytextview.AnyRelativeLayout
+                                    android:id="@+id/accoutLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/signinbar"
+                                    android:visibility="gone"
+                                    app:imageIslamicBgRelative="@drawable/signinbar_isl"
+                                    app:imagePremiumBgRelative="@drawable/signinbar_prem"
+                                    app:isIslamicAssetRelative="true"
+                                    app:isPremiumAssetRelative="true">
+                                    <!--ArrowButtonLeft-->
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/rcViewAccounts"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toStartOf="@+id/btnRight"
+                                        android:layout_toEndOf="@+id/btnLeft"
+                                        android:orientation="horizontal"
+
+                                        tools:listitem="@layout/home_accout_list" />
+                                    <!--Account Item -->
+
+                                    <com.base.bankalfalah.utils.anytextview.AnyImageView
+                                        android:id="@+id/btnLeft"
+                                        android:layout_width="@dimen/_22sdp"
+                                        android:layout_height="@dimen/_22sdp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center_vertical"
+                                        android:gravity="start|center_vertical"
+                                        android:padding="@dimen/_6sdp"
+                                        android:src="@drawable/previousicon_light"
+                                        android:tint="@color/white"
+                                        android:visibility="visible"
+                                        app:blockimageChange="true" />
+                                    <!-- <androidx.cardview.widget.CardView
+                                     android:id="@+id/accountCardViewtHome"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="@dimen/_55sdp"
+                                     android:layout_gravity="center"
+                                     android:layout_toEndOf="@+id/btnLeft"
+                                     android:layout_toStartOf="@+id/btnRight"
+                                     android:visibility="visible"
+                                     android:gravity="center"
+                                     android:orientation="vertical"
+                                     app:cardElevation="@dimen/_4sdp">
+
+                                     &lt;!&ndash;android:layout_height="@dimen/_200sdp"&ndash;&gt;
+
+                                 </androidx.cardview.widget.CardView>-->
+                                    <!--ArrownButtonRight-->
+                                    <com.base.bankalfalah.utils.anytextview.AnyImageView
+                                        android:id="@+id/btnRight"
+                                        android:layout_width="@dimen/_22sdp"
+                                        android:layout_height="@dimen/_22sdp"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center_vertical"
+                                        android:gravity="start|center_vertical"
+                                        android:padding="@dimen/_6sdp"
+                                        android:src="@drawable/nexticon_light"
+                                        android:tint="@color/white"
+                                        android:visibility="visible"
+                                        app:blockimageChange="true" />
+
+                                </com.base.bankalfalah.utils.anytextview.AnyRelativeLayout>
+
+                            </com.base.bankalfalah.utils.anytextview.AnyRelativeLayout>
+
+
+                        </com.base.bankalfalah.utils.anytextview.AnyRelativeLayout>
+                        </LinearLayout>
